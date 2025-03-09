@@ -14,10 +14,12 @@
 
 def longest_word(s)
   word = s.split(' ')
-  longest_word = s[0]
+  longest_word = word[0]
 
-     word.each do {|word| word.length >= longest_word.length
-}
+  word.each do |w|
+    if w.length >= longest_word.length
+      longest_word = w
+    end
+  end
+
 end
-
-
